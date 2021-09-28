@@ -98,7 +98,7 @@ void GameUI::run()
 			while (true) {
 				cout << "Do you want to undo a move? (Y/N): ";
 				getline(cin, isUndo);
-				if (isUndo != "Y" && isUndo != "N") {
+				if (isUndo != "Y" && isUndo != "N" && isUndo != "y" && isUndo != "n") {
 					cout << "Invalid Input! Please enter either Y for undo or N for not undo the last move." << endl;
 					continue;
 				}
@@ -106,7 +106,7 @@ void GameUI::run()
 					break;
 				}
 			}
-			if (isUndo == "Y") { //User wants to undo
+			if (isUndo == "Y" || isUndo == "y") { //User wants to undo
 				gameBoard.undoMove();
 				turn *= -1;
 				continue;
