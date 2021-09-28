@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Constants.h" />
     <ClInclude Include="include\GameBoard.h" />
     <ClInclude Include="include\GameUI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GameBoard.cpp" />
     <ClCompile Include="src\GameUI.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
